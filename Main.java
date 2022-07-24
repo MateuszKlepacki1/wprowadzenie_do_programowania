@@ -26,8 +26,8 @@ public class Main {
         int firstVariable = scanner.nextInt();
         System.out.println("Prosze podac druga liczbe");
         int secondVariable = scanner.nextInt();
-        System.out.println("Twoj wynik to " +calc.add(firstVariable, secondVariable));
-
+        System.out.println("Twoj wynik dodawania to " +calc.add(firstVariable, secondVariable));
+        System.out.println("Twoj wynik odejmowania to " +calc.sub(firstVariable, secondVariable));
 
     }
 }
