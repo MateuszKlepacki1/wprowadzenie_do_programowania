@@ -22,13 +22,29 @@ public class Main {
         Object system = null;
         Kalkulator calc = new Kalkulator();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Prosze podac pierwsza liczbe");
-        int firstVariable = scanner.nextInt();
-        System.out.println("Prosze podac druga liczbe");
-        int secondVariable = scanner.nextInt();
-        System.out.println("Twoj wynik dodawania to " +calc.add(firstVariable, secondVariable));
-        System.out.println("Twoj wynik odejmowania to " +calc.sub(firstVariable, secondVariable));
+        System.out.println("Podaj pierwsza cyfre");
+        int x = scanner.nextInt();
+        System.out.println("Jaka operacje chcesz wykonac wpisujac '+', '-', '*' lub '/'?");
+        String znak = scanner.next();
+        System.out.println("Podaj druga cyfre");
+        int y = scanner.nextInt();
+        switch (znak) {
+            case "+":
+                System.out.println(calc.add(x, y));
+                break;
+            case "-":
+                System.out.print(calc.sub(x, y));
+                break;
+            case "*":
+                System.out.print(calc.multiply(x, y));
+                break;
+            case "/":
+                System.out.print(calc.division(x, y));
+                break;
+
+        }
 
     }
 }
+
 

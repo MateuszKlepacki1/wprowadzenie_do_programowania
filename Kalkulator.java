@@ -1,17 +1,31 @@
 public class Kalkulator {
-/*
-1. dodawanie
-2. mnożenie
-3. odejmowanie
- */
-public int  add (int a, int b){
-    int c;
-    c = a + b;
-    return c;
-}
-public int sub (int d, int e){
-    int f;
-    f = d - e;
-    return f;
-}
+    /*
+    1. dodawanie
+    2. mnożenie
+    3. odejmowanie
+     */
+    public int add(int a, int b) {
+        int c;
+        c = a + b;
+        return c;
+    }
+
+    public int sub(int d, int e) {
+        int f;
+        f = d - e;
+        return f;
+    }
+
+    public int multiply(int a, int b) {
+        int c;
+        c = a * b;
+        return c;
+    }
+
+    public int division(int a, int b) {
+        int c;
+        c = a / b;
+        return c;
+
+    }
 }
